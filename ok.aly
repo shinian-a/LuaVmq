@@ -1,0 +1,19 @@
+{
+  LinearLayout;
+  orientation="vertical";
+  layout_width="wrap_content";
+  gravity="center";
+  layout_height="wrap_content";
+  {
+    ImageView;
+    src="assets/pay_ok.png";
+    layout_marginBottom="30dp";
+    layout_width="wrap_content";
+    layout_height="wrap_content";
+  };
+  {
+    TextView;
+    text="订单已支付成功";
+    textSize="50sp";
+  };
+};

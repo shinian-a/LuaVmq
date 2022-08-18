@@ -1,0 +1,17 @@
+appname="V免签调用API"
+appver="1.0"
+appcode="1"
+appsdk="15"
+path_pattern=""
+packagename="com.shinian.vmq"
+theme="Theme_Material_Light"
+app_key=""
+app_channel=""
+developer="十年"
+description="一个调用V免签支付接口发起支付的例子"
+debugmode=true
+user_permission={
+  "ACCESS_NETWORK_STATE",
+  "INTERNET",
+  "WRITE_EXTERNAL_STORAGE"
+}
