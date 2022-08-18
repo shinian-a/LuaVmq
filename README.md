@@ -4,3 +4,5 @@
 #V免签监控端更新地址：https://github.com/shinian-a/Vmq-App 
 
 #服务端开源地址：https://github.com/szvone/Vmq
+
+效果视频：https://b23.tv/gF96qVE
