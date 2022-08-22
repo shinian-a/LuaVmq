@@ -227,7 +227,7 @@ function Pay(paytype,returntype)
               code1 = content:match('"code":(.-),');
               msg = content:match('"msg":"(.-)",');
               data = content:match('"data":"(.-)"}');
-              if (code1 == "-1" or msg == "成功") then
+              if (code1 == "1" or msg == "成功") then
                 print("订单已支付,即将跳转..");
                 if (payType == "1") then
                   wxqrcode.setImageBitmap(loadbitmap("assets/pay_ok.png"));
@@ -240,6 +240,12 @@ function Pay(paytype,returntype)
                else
                 print("订单未支付,正在检测状态..");
               end
+              --设置最长监听时间 超时结束回调检测
+              task(15000,function()
+                if (code1 == "-1") then
+                  ht.stop();
+                end
+              end)
             end
           end)
         end
